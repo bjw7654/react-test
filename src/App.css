@@ -4,14 +4,14 @@ the font to be used for the text
 inside the body 
 ************************************/
 body {
-  font-family: Poppins, sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #24252a;
+  background-color: white;
 }
 
 /******** START OF CSS FOR NAV BAR *******/
@@ -19,11 +19,9 @@ body {
 li,
 a,
 .cta {
-  /* stylelint-disable-next-line font-family-name-quotes */
-  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 16px;
-  color: white;
+  color: #707070;
   text-decoration: none;
 }
 
@@ -32,27 +30,52 @@ a,
 }
 
 header {
+  text-align: center;
+  margin-right: auto;
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #24252a;
-  z-index: 1000; /* Set a high z-index to ensure it stays on top */
+  background-color: white;
+  z-index: 1000;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  padding: 15px 10%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for separation */
+  justify-content: space-between;
+  padding: 15px 2%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
 }
 
 .logo {
+  max-width: 1.5rem;
+  max-height: 1.2rem;
+}
+
+.budgetwise_text {
+  margin-left: .7rem;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-right: 3rem;
+}
+
+.logo_class {
   cursor: pointer;
-  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+  margin: .2rem 0;
 }
 
 .nav__links {
+  margin-left: 2rem;
   list-style: none;
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 
 .nav__links li {
@@ -65,359 +88,37 @@ header {
 }
 
 .nav__links li a:hover {
-  color: #0088a9;
+  color: #5157BF;
 }
 
-button {
-  cursor: pointer;
+.john_doe_profile_picture {
+  max-width: 2rem;
+  border-radius: 50%;
+  margin-left: auto;
 }
 
-.contact-button {
-  padding: 9px 25px;
-  background-color: rgba(0, 136, 169, 1);
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3 ease 0s;
-}
-
-.resume-button {
-  margin-left: 1rem;
-  margin-bottom: -1rem;
-  padding: 1.3rem 2rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.3 ease 0s;
-  background-color: white;
-  color: #24252a;
-  font-weight: bold;
-}
-
-.contact-row {
+.users_profile {
   display: flex;
-  justify-content: start;
+  cursor: pointer;
 }
 
-.contact-button:hover,
-.resume-button:hover {
-  background-color: rgba(0, 136, 169, 0.8);
+.user_name {
+  margin-top: .35rem;
+  margin-left: 1rem;
+  font-weight: 600;
+}
+
+.caret_icon {
+  margin-left: 2rem;
+  margin-top: .35rem;
+  max-width: 2rem;
+  max-height: 1rem;
+}
+
+.profile_button {
+  border: none;
+  display: flex;
+  cursor: pointer;
 }
 
 /******** END OF CSS FOR NAV BAR *******/
-
-/***** START OF CSS FOR ANNIMATION FOR THE PHOTO OF AIDEN ******/
-@keyframes morph {
-  0% {
-    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-  }
-
-  50% {
-    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
-  }
-
-  100% {
-    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-  }
-}
-
-.photoOfAiden {
-  animation: morph 8s ease-in-out infinite;
-  background-image: url('./images/photoOfAiden.JPG');
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border: 3px solid white;
-  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-  height: 27rem; /* change me to your needs */
-  position: relative;
-  transition: all 1s ease-in-out;
-  width: 35rem;
-}
-
-@media only screen and (width < 1369px) {
-  .meet-main {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 0;
-  }
-
-  .meet-text h1 {
-    padding-top: 0;
-  }
-
-  .skills {
-    margin-top: 5rem;
-    margin-bottom: 0;
-  }
-}
-
-@media only screen and (width < 1365px) {
-  .contact-row {
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-@media only screen and (width < 940px) {
-  .photoOfAiden {
-    height: 15rem; /* change me to your needs */
-    width: 15rem;
-    background-position: 0%;
-    margin-top: 1rem;
-    margin-right: 5rem;
-    margin-left: 5rem;
-  }
-
-  .content div {
-    gap: 0;
-  }
-
-  .meet-text .position {
-    font-size: 2em;
-  }
-
-  #home {
-    margin-top: 0;
-  }
-}
-
-@media only screen and (width < 950px) {
-  .meet-text h2 {
-    font-size: 3rem;
-    line-height: 1.2;
-  }
-}
-
-@media only screen and (width < 600px) {
-  .services .container {
-    padding: 0 3rem;
-    margin: auto 0;
-  }
-
-  .meet .container {
-    padding: 0;
-    margin: auto 0;
-  }
-
-  .projects .container {
-    padding: 0 1rem;
-    margin: auto 0;
-  }
-
-  .about .container {
-    padding: 0 1rem;
-    margin: auto 0;
-  }
-
-  .qualifications .container {
-    padding: 0 1rem;
-    margin: auto 0;
-  }
-
-  .footer .container {
-    padding: 0 1rem;
-    margin: auto 0;
-  }
-
-  .content {
-    padding-bottom: 0; /* Maintain 1:1 aspect ratio */
-  }
-}
-
-.bars-icon {
-  display: none;
-  font-size: 1.5rem;
-  color: white;
-}
-
-@media only screen and (width < 700px) {
-  .nav__links {
-    display: none;
-  }
-
-  .bars-icon {
-    display: block;
-  }
-}
-
-/* stylelint-disable-next-line media-feature-range-notation */
-@media (max-width: 900px) {
-  .content {
-    flex-direction: column;
-    gap: 3rem;
-    height: 0;
-    padding-bottom: 35%; /* Maintain 1:1 aspect ratio */
-    position: relative;
-    text-align: center;
-    overflow: hidden;
-    border-radius: 50%;
-  }
-}
-
-/***** END OF CSS FOR ANNIMATION OF THE PHOTO OF AIDEN ******/
-
-/******* STARTING OF CSS FOR LINKEDIN AND GITHUB *********/
-.fa-linkedin::before {
-  content: '\f08c';
-}
-
-a .fab.fa-linkedin {
-  font-size: 55px;
-}
-
-.fa-github::before {
-  content: '\f09b';
-}
-
-a .fa-github {
-  font-size: 55px;
-}
-
-.fa-linkedin {
-  margin-right: 1rem;
-}
-
-/******* ENDING OF CSS FOR LINKEDIN AND GITHUB *********/
-
-/****** MARGIN FOR WEBSITE ********/
-.container {
-  margin: 0 auto;
-  max-width: 107rem;
-  padding-left: 10rem;
-  padding-right: 10rem;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-/****** MARGIN FOR WEBSITE ********/
-
-.content {
-  align-items: center;
-  display: flex;
-  gap: 10rem;
-  height: auto;
-  justify-content: center;
-  position: relative;
-}
-
-.meet-main {
-  align-items: center;
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  position: relative;
-  color: white;
-  margin-bottom: 20px;
-  margin-top: 4rem;
-}
-
-.meet-text h2 {
-  font-size: 5.5rem;
-  line-height: 1.2;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
-
-p {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-}
-
-.meet-text p {
-  font-family: Mulish, sans-serif;
-  font-size: 1.8rem;
-  font-weight: 500;
-  line-height: 1.6;
-}
-
-.meet {
-  margin-top: 10rem;
-  margin-bottom: 20rem;
-  background-color: #24252a;
-  display: flex;
-  flex-direction: column;
-  height: 51vh;
-  position: relative;
-  width: 100%;
-}
-
-/********
-.skills ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2.5rem;
-  list-style: none;
-}
-
-.skills {
-  border-right: 2px solid rgba(45,46,50,.5);
-  color: #2d2e32;
-  font-family: Mulish,sans-serif;
-  font-weight: 600;
-  margin-right: 7rem;
-  padding-right: 2rem;
-}
-
-*********/
-
-.skill-content {
-  /*
-  align-items: center;
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  position: relative;
-  */
-  color: white;
-
-  /*
-  margin-bottom: 20px;
-  */
-}
-
-.skills {
-  margin-bottom: 10rem;
-}
-
-.flex-container {
-  margin-top: 3.7rem;
-  display: row;
-  flex-wrap: wrap;
-  background-color: rgb(255, 255, 255);
-  position: fixed;
-  z-index: 980; /* Set a high z-index to ensure it stays on top */
-  width: 100%;
-}
-
-.icon-text {
-  padding: 0.5rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #24252a;
-  font-size: 1.3rem;
-  flex-basis: 100%;
-  text-decoration: none;
-  background-color: white;
-  font-weight: bold;
-}
-
-.icon-text:hover {
-  color: #0088a9;
-}
-
-.icon-text:focus {
-  color: #0088a9;
-}
-
-@media only screen and (width < 600px) {
-  .skills {
-    margin-bottom: 4rem;
-    padding-top: 4.8rem;
-  }
-}
