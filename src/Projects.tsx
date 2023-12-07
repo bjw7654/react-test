@@ -1,20 +1,38 @@
 import './Projects.css';
 import Project from './Project.tsx';
+import FilmCriticPhoto1 from './images/filmCritic/filmCritic_SignInAndOut.png';
+import FilmCriticPhoto2 from './images/filmCritic/filmCritic_Feed.png';
+import FilmCriticPhoto3 from './images/filmCritic/filmCritic_FilmDetails.png';
+import FilmCriticPhoto4 from './images/filmCritic/filmCritic_recommendations.png';
+import FilmCriticPhoto5 from './images/filmCritic/filmCritic_FilmDetails.png';
+import FilmCriticPhoto6 from './images/filmCritic/filmCritic_FilmDetailsTrailers.png';
+import FilmCriticPhoto7 from './images/filmCritic/filmCritic_FilmDetailsLinks.png';
+import FilmCriticPhoto8 from './images/filmCritic/filmCritic_Rating.png';
+import FilmCriticPhoto9 from './images/filmCritic/filmCritic_Profile.png';
+import FilmCriticPhoto10 from './images/filmCritic/filmCritic_Profile2.png';
+import FilmCriticPhoto11 from './images/filmCritic/filmCritic_Profile3.png';
+
+import KeyWordReliefPhoto1 from './images/keywordRelief/KeywordRelief.png';
+import KeyWordReliefPhoto2 from './images/keywordRelief/loading.png';
+import KeyWordReliefPhoto3 from'./images/keywordRelief/selectVocabWords.png';
+import KeyWordReliefPhoto4 from './images/keywordRelief/keywordList.png';
+import KeyWordReliefPhoto5 from './images/keywordRelief/deletePopup.png';
+import KeyWordReliefPhoto6 from './images/keywordRelief/keywordListAfterdelete.png';
 
 export default function Projects() {
   const project1 = {
     photo: [
-      '../public/images/filmCritic/filmCritic_SignInAndOut.png',
-      '../public/images/filmCritic/filmCritic_Feed.png',
-      '../public/images/filmCritic/filmCritic_FilmDetails.png',
-      '../public/images/filmCritic/filmCritic_recommendations.png',
-      '../public/images/filmCritic/filmCritic_FilmDetails.png',
-      '../public/images/filmCritic/filmCritic_FilmDetailsTrailers.png',
-      '../public/images/filmCritic/filmCritic_FilmDetailsLinks.png',
-      '../public/images/filmCritic/filmCritic_Rating.png',
-      '../public/images/filmCritic/filmCritic_Profile.png',
-      '../public/images/filmCritic/filmCritic_Profile2.png',
-      '../public/images/filmCritic/filmCritic_Profile3.png',
+      FilmCriticPhoto1,
+      FilmCriticPhoto2,
+      FilmCriticPhoto3,
+      FilmCriticPhoto4,
+      FilmCriticPhoto5,
+      FilmCriticPhoto6,
+      FilmCriticPhoto7,
+      FilmCriticPhoto8,
+      FilmCriticPhoto9,
+      FilmCriticPhoto10,
+      FilmCriticPhoto11,
     ],
     link: 'http://filmcritic-dev.us-west-1.elasticbeanstalk.com/',
     title: 'FilmCritic',
@@ -32,12 +50,12 @@ export default function Projects() {
 
   const project2 = {
     photo: [
-      '../public/images/keywordRelief/KeywordRelief.png',
-      '../public/images/keywordRelief/loading.png',
-      '../public/images/keywordRelief/selectVocabWords.png',
-      '../public/images/keywordRelief/keywordList.png',
-      '../public/images/keywordRelief/deletePopup.png',
-      '../public/images/keywordRelief/keywordListAfterdelete.png',
+      KeyWordReliefPhoto1,
+      KeyWordReliefPhoto2,
+      KeyWordReliefPhoto3,
+      KeyWordReliefPhoto4,
+      KeyWordReliefPhoto5,
+      KeyWordReliefPhoto6,
     ],
     link: 'https://aiden-peace300.github.io/KeyWord-Relief-AJAX/',
     title: 'Keyword Relief',

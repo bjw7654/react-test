@@ -48,6 +48,10 @@
     margin: 1rem 0;
   }
 
+  .contact-row .resume {
+    margin-top: 0.5rem;
+  }
+
   .vertical-line {
     display: none;
   }

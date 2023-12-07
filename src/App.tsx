@@ -1,12 +1,12 @@
 import './App.css';
-import logo from '../public/images/aidensLogo.png';
+import logo from './images/aidensLogo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import Projects from './Projects.tsx';
 import Skills from './Skills.tsx';
 import About from './About.tsx';
-import Pdf from '../public/documents/Document.pdf';
+import Pdf from './documents/Document.pdf';
 import { useState } from 'react';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { IconClicked } from './IconClicked.tsx';

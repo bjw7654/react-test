@@ -13,6 +13,7 @@ export default function About() {
               marginBottom: '0.5rem',
               marginLeft: '1rem',
               marginRight: '1rem',
+              textAlign: 'left',
             }}>
             In the expansive realm of coding, I stand as a Full Stack Developer
             Extraordinaire, a maestro weaving seamless harmonies between
